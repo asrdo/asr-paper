@@ -28,10 +28,12 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Install LaTeX
-        run: curl -sL "https://yihui.org/tinytex/install-bin-unix.sh" | sh
+        run: |
+          install.packages("tinytex")
+          tinytex::install_tinytex()
 
       - name: Compile LaTeX
-        run: pdflatex asr-summary.tex
+        run: pdflatex -interaction=nonstopmode -output-directory=output asr-summary.tex
 
       - name: Upload PDF Artifact
         uses: actions/upload-artifact@v3
