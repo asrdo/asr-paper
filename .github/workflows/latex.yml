@@ -32,11 +32,14 @@ jobs:
         with:
           root_file: asr-summary.tex
 
+      - name: Move Compiled PDF to Specific Directory
+        run: mv asr-summary.pdf output/
+
 
       - name: Commit and Push Compiled PDF
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "github-actions@github.com"
-          git add -f asr-summary.pdf
+          git add -f output/asr-summary.pdf
           git commit -m "Auto-generated PDF from GitHub Actions"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/asrdo/asr-paper
