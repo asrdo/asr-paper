@@ -33,8 +33,10 @@ jobs:
           root_file: asr-summary.tex
 
 
-      - name: Upload PDF Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: compiled-document
-          path: output/asr-summary.pdf
+      - name: Commit and Push Compiled PDF
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "github-actions@github.com"
+          git add asr-summary.pdf
+          git commit -m "Auto-generated PDF from GitHub Actions"
+          git push
