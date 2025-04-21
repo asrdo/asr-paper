@@ -26,14 +26,12 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      # Runs a single command using the runners shell
-      - name: Install LaTeX
-        run: |
-          wget -qO- "https://yihui.org/tinytex/TinyTeX.tar.gz" | tar -xz -C $HOME
-          echo "$HOME/TinyTeX/bin/x86_64-linux" >> $GITHUB_PATH
+        
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: asr-summary.tex
 
-      - name: Compile LaTeX
-        run: pdflatex -interaction=nonstopmode -output-directory=output asr-summary.tex
 
       - name: Upload PDF Artifact
         uses: actions/upload-artifact@v4
