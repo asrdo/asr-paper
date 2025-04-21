@@ -28,7 +28,10 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Install LaTeX
-        run: sudo apt-get update && sudo apt-get install -y texlive-full
+        run: |
+          wget -qO- "https://yihui.org/tinytex/TinyTeX.tar.gz" | tar -xz -C $HOME
+          echo "$HOME/TinyTeX/bin/x86_64-linux" >> $GITHUB_PATH
+          tlmgr update --self
 
       - name: Compile LaTeX
         run: pdflatex -interaction=nonstopmode -output-directory=output asr-summary.tex
