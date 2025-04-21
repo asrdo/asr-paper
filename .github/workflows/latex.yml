@@ -28,9 +28,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Install LaTeX
-        run: |
-          install.packages("tinytex")
-          tinytex::install_tinytex()
+        run: sudo apt-get update && sudo apt-get install -y texlive-full
 
       - name: Compile LaTeX
         run: pdflatex -interaction=nonstopmode -output-directory=output asr-summary.tex
