@@ -27,6 +27,5 @@ https://github.com/asrdo/asr-paper
 - You ***must*** include a message for each commit you make explaining what you changed.
 
 - You ***must*** create your own branch to work on your own version of the code.
-
-- 
+  
 ---
