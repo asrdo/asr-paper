@@ -37,6 +37,6 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "github-actions@github.com"
-          git add -f output.pdf
+          git add -f asr-summary.pdf
           git commit -m "Auto-generated PDF from GitHub Actions"
           git push
