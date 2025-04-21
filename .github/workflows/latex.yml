@@ -39,4 +39,4 @@ jobs:
           git config --global user.email "github-actions@github.com"
           git add -f asr-summary.pdf
           git commit -m "Auto-generated PDF from GitHub Actions"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/asr-paper.git
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/asr-paper
