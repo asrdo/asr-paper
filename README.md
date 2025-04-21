@@ -1,8 +1,8 @@
-# **Summary of Arabic ASR: Challenges and Progress**
-Main repository of the summary of Arabic ASR: Challenges and Progress
- *written in LaTeX*
 
-*Written by Abdulkader*
+# **Summary of Automatic Audio Recognition Papers**
+
+Main repository of the Summary of Automatic Audio Recognition Papers
+ *written in LaTeX*
 
 ## **Team Members**
 
@@ -17,15 +17,12 @@ Main repository of the summary of Arabic ASR: Challenges and Progress
 
 ## **Repository link**
 
-https://github.com/asrdo/asr-paper
-
-
-
+<https://github.com/asrdo/asr-paper>
 
 ### Repository Rules
 
 - You ***must*** include a message for each commit you make explaining what you changed.
 
 - You ***must*** create your own branch to work on your own version of the code.
-  
+
 ---
