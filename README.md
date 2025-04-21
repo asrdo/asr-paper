@@ -1,5 +1,5 @@
 # **Summary of Arabic ASR: Challenges and Progress**
-Main repository of the summary of Arabic ASR: Challenges and Progress written in LaTeX
+Main repository of the summary of Arabic ASR: Challenges and Progress
  *written in LaTeX*
 
 *Written by Abdulkader*
