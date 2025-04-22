@@ -9,7 +9,7 @@ Main repository of the Summary of Automatic Audio Recognition Papers
 | No | Name                              | Matric No |
 |----|-----------                        |-----------|
 | 1  | **Abdulkader Sardini**            | A21EC4005 |
-| 2  | **Sohaib Belaroussi**             | A21EC4057 |
+| 2  | **Sohaib Belaroussi**             | A20EC0268 |
 | 3  | **Henry Meshack Okinyi Odongo**   | A20EC4027 |
 | 4  | **Syuja Akmal Rifqi**             | A21EC4058 |
 
