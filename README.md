@@ -15,14 +15,20 @@ Main repository of the Summary of Automatic Audio Recognition Papers
 
 ---
 
+### Repository Rules
+
+- You ***must*** include a message for each commit you make explaining what you changed/added.
+
+- You ***must*** create your own branch to work on your own version of the code.
+
+- ***Do not*** modify any files other than the one that has your name on it.
+
+- ***Do not*** push to main branch before discussing with others.
+
+- Insert any photos you use in the \images directory.
+
 ## **Repository link**
 
 <https://github.com/asrdo/asr-paper>
-
-### Repository Rules
-
-- You ***must*** include a message for each commit you make explaining what you changed.
-
-- You ***must*** create your own branch to work on your own version of the code.
 
 ---
