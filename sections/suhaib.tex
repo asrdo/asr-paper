@@ -1,2 +1,13 @@
-\section{Suhaib's part [replace text with content]}
-\subsection{Test}
+\section{Trends and Developments in Automatic Speech Recognition Research}
+This paper surveys the unique characteristics of human speech—its quasi-periodic source excitation, complex vocal-tract filtering, and rich prosodic cues—and how these have shaped ASR design choices. O’Shaughnessy contrasts speech-specific feature extraction (e.g., exploiting formant structure and prosody) with the generic architectures often borrowed from image and text tasks, arguing that a deeper understanding of speech production and perception can yield more accurate and efficient recognition systems .
+
+Tracing the history of ASR, the author details the transition from hidden Markov models (HMMs) to deep neural networks (DNNs), highlighting tools such as Kaldi, PyTorch, TensorFlow, and data2vec. He explains how acoustic models evolved through context-dependent triphone modeling, and how language models and rescoring complement frame-level decisions, yet emphasizes persistent gaps in handling noise, accents, and far-field speech—where word error rates often far exceed human performance under degraded conditions.
+
+Finally, the paper proposes future directions: incorporating prosodic features (duration, pitch, stress), refining spectral representations to focus on formant movements, and integrating structured priors about speech into neural architectures. These recommendations aim to bridge the remaining gap to human-level recognition while reducing computational cost and model complexity .
+
+\section{Research Developments and Directions in Speech Recognition and Understanding}
+This retrospective charts ASR’s maturation since the 1970s, beginning with the exponential growth in compute power (Moore’s Law), shared corpora (e.g., NIST, LDC), and open-source toolkits (HTK, Kaldi, Sphinx). It highlights how standardized benchmarks and rigorous evaluations by bodies like DARPA have driven robust system development.
+
+On the modeling side, the authors review perceptually motivated front-end features (MFCC, PLP), normalization techniques (cepstral mean subtraction, RASTA, vocal-tract length normalization), and the unifying power of probabilistic graph structures. They describe the HMM paradigm and its training via EM/Baum–Welch, the surprising resilience of N-gram language models, decision-tree clustering, discriminative training (MMI, fMPE), and key decoding strategies (Viterbi, A* search). Speaker adaptation methods—MAP, MLLR, eigenvoices—and metadata handling (segmentation, topic/speaker indexing) are also surveyed.
+
+Concluding with six “grand challenges,” the paper calls for: robust recognition in everyday audio environments; rapid portability to low-resource languages; self-adaptive, lifelong-learning systems; reliable detection of rare or out-of-vocabulary events; cognitive-inspired architectures informed by brain science; and spoken-language comprehension at a basic (grade school) level. These initiatives are posed as multi-year research programs to catalyze paradigm-shifting advances in ASR and understanding.
